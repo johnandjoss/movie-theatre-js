@@ -18,3 +18,39 @@ function Ticket(movieName, movieNewRelease, age, timeOfDay) {
         return totalPrice;
     }
 }
+
+
+$(document).ready(function(){
+  $("form#new-movie").submit(function(event){
+    event.preventDefault();
+
+    var movieName = $('input[name="movie-choices"]:checked').val();
+    alert(movieName);
+
+  });
+
+  $("form#new-times").submit(function(event){
+    event.preventDefault();
+
+    var TimeOfDay = $('input[name="time-choices"]:checked').val();
+    alert(TimeOfDay);
+
+  });
+
+  $("form#new-ages").submit(function(event){
+    event.preventDefault();
+
+    var age = parseInt($("input.ages").val());
+    alert(age);
+
+  });
+
+  $("form#movie-special").submit(function(event){
+    event.preventDefault();
+
+    var movieSpecial = $('input[name="movie-type"]:checked').val();
+    alert(movieSpecial);
+
+  });
+
+});

@@ -1,0 +1,38 @@
+h1, h2 {
+  text-align: center;
+  font-size:28px;
+
+}
+
+.header {
+  background-color: lightgrey;
+  border-radius: 5px;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.create-account-section {
+  background-color: lightgrey;
+  border-radius: 5px;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left:25px;
+  margin-top:20px;
+}
+
+.create-account-section {
+  margin: auto;
+  margin-top: 30px;
+
+}
+form {
+  margin-bottom: 10px;
+}
+
+input[type=radio]{
+  margin-left: 6px;
+}

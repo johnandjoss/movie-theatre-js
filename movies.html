@@ -9,54 +9,84 @@
   </head>
   <body>
     <div class="container">
+      <div class="header">
       <h1>Movie Tickets</h1>
-
+      <h2>Buy a movie ticket:</h2>
+    </div>
       <div class="row create-account-section">
-        <div class="col-md-6">
-          <h2>Sign up for an account:</h2>
-          <form id="new-bank-account">
+        <div class="col-md-8-offset-2">
+          <form id="new-movie">
             <div class="form-group">
-              <label for="new-owner-name">account-owner-name</label>
-              <input type="text" class="form-control new-owner-name">
+              <label for="movie-one">The Frog</label>
+              <input type="radio" class="movie-one" name="movie-choices" value="The Frog">
             </div>
             <div class="form-group">
-              <label for="new-initial-deposit">account-initial-deposit</label>
-              <input type="text" class="form-control account_initial_deposit">
+              <label for="movie-two">Scary John</label>
+              <input type="radio" class="movie-two" name="movie-choices" value="Scary John">
             </div>
-
-            <button type="submit" class="btn btn-info create-account">Create Account</button>
+            <div class="form-group">
+              <label for="movie-three">Joss The Boss</label>
+              <input type="radio" class="movie-three" name="movie-choices" value="Joss The Boss">
+            </div>
+            <div class="form-group">
+              <label for="movie-four">Jeanette Loves Coffee</label>
+              <input type="radio" class="movie-four" name="movie-choices" value="Jeanette Loves Coffee">
+            </div>
+            <button type="submit" class="btn btn-info choose-movie">Choose Movie</button>
           </form>
+
+          <form id="new-times">
+            <div class="form-group">
+              <label for="time-one"> 11:00 am</label>
+              <input type="radio" class="time-one" name="time-choices" value="1100">
+            </div>
+            <div class="form-group">
+              <label for="time-two">1:00 pm</label>
+              <input type="radio" class="time-two" name="time-choices" value="1400">
+            </div>
+            <div class="form-group">
+              <label for="time-three">4:00 pm</label>
+              <input type="radio" class="time-three" name="time-choices" value="1600">
+            </div>
+            <div class="form-group">
+              <label for="time-four">6:00 pm</label>
+              <input type="radio" class="time-four" name="time-choices"  value="1800">
+            </div>
+            <button type="submit" class="btn btn-info choose-movie">Choose Time</button>
+          </form>
+
+          <form id="new-ages">
+            <div class="form-group">
+              <label for="ages">Enter your age: </label>
+              <input type="text" class="ages" name="age-choices">
+            </div>
+            <button type="submit" class="btn btn-info choose-movie">Enter Age</button>
+          </form>
+
+          <form id="movie-special">
+            <div class="form-group">
+              <label for="new-release">New Release</label>
+              <input type="radio" class="new-release" name="movie-type" value=true>
+            </div>
+            <div class="form-group">
+              <label for="old-movie">Bargain Movie</label>
+              <input type="radio" class="new-release" name="movie-type" value=false>
+            </div>
+            <button type="submit" class="btn btn-info choose-movie">Choose Type</button>
+          </form>
+
         </div>
       </div>
-
-      <div class="row transaction-section">
-        <div class="col-md-6">
-          <h2>Make a Transaction:</h2>
-          <form id="transaction-withdrawal">
-            <div class="form-group">
-              <label for="new-withdrawal">Withdraw Funds</label>
-              <input type="text" value="0.00" class="form-control new-withdrawal" placeholder="0.00">
-            </div>
-
-            <div class="form-group">
-              <label for="new-deposit">Deposit Funds</label>
-              <input type="text" value="0.00" class="form-control new-deposit" placeholder="0.00">
-            </div>
-
-            <button type="submit" class="btn btn-info create-transaction">Calculate</button>
-          </form>
-        </div>
-      </div>
-
-
-        <div class="row account-info-section">
+      <div class="row account-info-section">
         <div class="col-md-6">
             <div id="show-account-info">
               <h2></h2>
 
-              <p>Account Owner Name: <span class="first-name"></span></p>
-              <p>Balance: <span class="current-balance"></span></p>
-              <button id="clear-account" class="btn btn-info">Delete Account</button>
+              <p>Movie Name: <span class="movie-name"></span></p>
+              <p>Movie Times : <span class="ticket-price"></span></p>
+              <p>Age: <span class="ticket-price"></span></p>
+              <p>Ticket Price: <span class="ticket-price"></span></p>
+              <button id="calculate" class="btn btn-info">Get Price</button>
             </div>
         </div>
       </div>
