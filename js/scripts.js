@@ -35,6 +35,9 @@ $(document).ready(function(){
     var newTicket = new Ticket(movieName, movieSpecial, age, timeOfDay);
 
     $(".movie-name").append("<span>" + newTicket.movieName + "</span>");
+    $(".movie-times").append("<span>" + newTicket.timeOfDay + "</span>");
+    $(".user-age").append("<span>" + newTicket.age + "</span>");
+    $(".ticket-price").append("<span> $" + newTicket.ticketPrice() + "</span>");
   });
 
 });
